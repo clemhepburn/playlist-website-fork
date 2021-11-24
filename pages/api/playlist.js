@@ -7,7 +7,8 @@ export const getPlaylist = async () => {
     },
   });
   const data = await playlist.json();
-  return data;
+  const reverseData = data.reverse();
+  return reverseData;
 };
 
 const Playlist = async (req, res) =>
