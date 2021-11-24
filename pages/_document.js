@@ -25,11 +25,11 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.svg" /> 
           <link
             rel="apple-touch-icon"
-            href="/images/apple-touch-icon-180x180.png"
+            href="/favicon.svg"
           />
           <link
             rel="apple-touch-icon"
-            href="/images/apple-touch-icon-152x152.png"
+            href="/favicon.svg"
           />
           <meta
             name="twitter:card"

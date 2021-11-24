@@ -11,5 +11,4 @@ module.exports = {
   images: {
     domains: ["https://lune-backend.herokuapp.com/tracks"],
   },
-  target: "serverless",
 };
