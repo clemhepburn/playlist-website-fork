@@ -1,12 +1,12 @@
 export default {
-  title: "door.link",
+  title: "lune en beton",
   description:
-    "A curated selection of music for listening and dancing in small, safe spaces.",
-  canonical: "https://www.door.link",
+    "clem playlists",
+  canonical: "https://luneenbeton.cafe",
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://www.door.link",
-    site_name: "door.link",
+    url: "https://luneenbeton.cafe",
+    site_name: "lune en beton",
   },
 };

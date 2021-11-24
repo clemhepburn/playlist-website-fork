@@ -51,6 +51,7 @@ export default function Player({ selectedTrack, setSelectedTrack, dark }) {
     sources: [
       {
         src: selectedTrack.url,
+        type: "audio/mp3",
       },
     ],
   };
@@ -96,7 +97,7 @@ export default function Player({ selectedTrack, setSelectedTrack, dark }) {
                 "--plyr-audio-control-color-hover": "rgb(20,20,20)",
               }
             : {
-                "--plyr-color-main": "blue",
+                "--plyr-color-main": "grey",
                 "--plyr-audio-controls-background": "rgba(255, 255, 255, 0.95)",
               }
         }

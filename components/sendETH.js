@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "space-between",
     color: "white",
+    padding: "1rem",
     width: "100%",
     maxWidth: "800px",
     [theme.breakpoints.down("xs")]: {
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   payPal: {
-    color: "blue",
+    color: "black",
     fontWeight: "bold",
     display: "flex",
     flexDirection: "column",
@@ -75,24 +76,25 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "400px",
     width: "100%",
     height: "250px",
-    backgroundColor: "blue",
-    color: "white",
+    backgroundColor: "white",
+    border: "1px solid black",
+    color: "black",
     padding: "2rem",
   },
   text: {
     fontSize: "1rem",
     lineHeight: "1.1",
-    color: theme.palette.primary.main,
+    color: '#000000',
     marginBottom: " 1rem",
     textAlign: "left",
   },
   inputField: {
     marginRight: ".5rem",
-    border: "1px solid white",
+    // border: "1px solid black",
   },
   input: {
-    color: "white",
-    fontSize: "1.5rem",
+    color: "black",
+    fontSize: "1.2rem",
   },
   flex: {
     display: "flex",
@@ -106,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Button: {
     width: "100%",
-    color: "blue",
+    color: "black",
     backgroundColor: "white",
     borderColor: "white",
     textTransform: "none",
@@ -114,7 +116,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0",
     "&:hover": {
       backgroundColor: "#fff",
-      color: "blue",
+      color: "black",
+      textDecoration: "underline",
     },
   },
 }));
@@ -167,7 +170,7 @@ const SendETH = ({ dark, setSupport }) => {
 
   //variables
   const currentETHPriceInUSD = data?.market_data.current_price.usd;
-  const addr = "0xf5F849c1c5AA93e1231220E844a92dE39fbE5F35";
+  const addr = "0xAa6FB66fEC701B293597CdfB3696c30D3c4A8f61";
   //helper function
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -195,10 +198,10 @@ const SendETH = ({ dark, setSupport }) => {
   return (
     <Box
       className={classes.boxWrapper}
-      style={{ backgroundColor: dark ? "#121212" : "white" }}
+      style={{ backgroundColor: dark ? "#121212" : "#ffffff" }}
     >
       <Box onClick={() => setSupport(false)} className={classes.close}>
-        <AiOutlineClose style={{ color: "blue", fontSize: "30px" }} />
+        <AiOutlineClose style={{ color: "black", fontSize: "30px" }} />
       </Box>
       <Box
         style={{
@@ -210,12 +213,12 @@ const SendETH = ({ dark, setSupport }) => {
         }}
       >
         <Typography className={classes.text}>
-          If you enjoy door.link, <br /> consider sending your support
+          lune en béton is supported by listeners like you
         </Typography>
 
         <Box className={classes.bigBox}>
           <Box className={classes.payPal} style={{ textAlign: "left" }}>
-            <NextLink href="https://www.paypal.com/donate?hosted_button_id=A397N24XG4CZJ">
+            <NextLink href="https://www.paypal.com/donate/?business=FB2FZNP9YJL4J&no_recurring=0&currency_code=USD">
               <a
                 target="_blank"
                 rel="noopener"

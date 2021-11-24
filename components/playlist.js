@@ -22,10 +22,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const Accordion = withStyles({
   root: {
-    border: "1px solid #a9a9a9",
+    border: "1px solid #000000",
     backgroundColor: "transparent",
-    borderLeft: "0px",
-    borderRight: "0px",
+    borderLeft: "1px solid #000000",
+    borderRight: "1px solid #000000",
     boxShadow: "none",
     "&:not(:last-child)": {
       borderBottom: 0,
@@ -42,7 +42,7 @@ const Accordion = withStyles({
 
 const AccordionSummary = withStyles({
   root: {
-    borderBottom: "0px solid #a9a9a9",
+    borderBottom: "1px solid #000000",
 
     marginBottom: -1,
     minHeight: 56,
@@ -61,7 +61,7 @@ const AccordionSummary = withStyles({
 const AccordionDetails = withStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
-    borderBottom: "0px solid #a9a9a9",
+    borderBottom: "1px solid black",
   },
 }))(MuiAccordionDetails);
 
@@ -94,14 +94,14 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "cover",
   },
   arrowDown: {
-    color: theme.palette.primary.main,
+    color: 'black',
   },
   playBtn: {
     margin: "0.5rem 0",
     cursor: "pointer",
     color: theme.palette.secondary.main,
     "&:hover": {
-      color: theme.palette.primary.main,
+      color: '#9FA8CB',
     },
     [theme.breakpoints.down("sm")]: {
       margin: "1.5rem 0 0.5rem 0",

@@ -9,6 +9,6 @@ module.exports = {
   },
 
   images: {
-    domains: ["radio-strapi-bucket.s3.sa-east-1.amazonaws.com"],
+    domains: ["https://lune-backend.herokuapp.com/tracks"],
   },
 };

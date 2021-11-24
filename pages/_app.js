@@ -27,10 +27,10 @@ function MyApp({ Component, pageProps }) {
   const lightt = createMuiTheme({
     palette: {
       primary: {
-        main: "#0000FF",
+        main: "#000000",
       },
       secondary: {
-        main: "#444444",
+        main: "#000000",
       },
       background: {
         default: "#ffffff",
@@ -40,17 +40,18 @@ function MyApp({ Component, pageProps }) {
     overrides: {
       MuiTypography: {
         body2: {
-          fontSize: "14px",
-          color: "#444444",
+          fontSize: "24px",
+          color: "#000000",
+          fontFamily: "Helvetica",
         },
         caption: {
           fontSize: "11px",
-          color: "#444444",
+          color: "#000000",
         },
         h6: {
           fontSize: "14px",
-          color: "#444444",
-        },
+          color: "#000000",
+        }
       },
     },
   });

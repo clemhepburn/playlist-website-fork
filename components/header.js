@@ -95,26 +95,25 @@ export default function Header({ darkTheme, dark, selectedTrack }) {
             paddingTop: "3px",
             paddingBottom: "3px",
           }}
-        >
-          [ door ]
+        >  
+          Lune en béton
         </Typography>
-        {!selectedTrack && (
+        {/* {!selectedTrack && (
           <img
-            src={dark ? "/logowhite.svg" : "/logoblack.svg"}
+            src={dark ? "/logowhite.png" : "/logoblack.png"}
             style={{ cursor: "pointer", padding: "3px" }}
-            width="16px"
-            height="24.55px"
+            width="30px"
+            height="auto"
             alt="door.link logo"
             onClick={darkTheme}
           />
-        )}
+        )} */}
       </Box>
       <Box className={classes.leftContainer}>
         {info ? (
           <Box className={classes.box}>
             <Typography variant="h6">
-              A curated selection of music for listening and dancing in small,
-              safe spaces.
+              dented material fluttering
               <Typography
                 onClick={handleInfo}
                 display="inline"
@@ -124,43 +123,25 @@ export default function Header({ darkTheme, dark, selectedTrack }) {
                   whiteSpace: "nowrap",
                 }}
                 color="primary"
-                variant="body2"
+                // variant="body2"
               >
-                [ more ]
+                about
               </Typography>
             </Typography>
           </Box>
         ) : (
           <Box className={classes.box}>
             <Typography variant="h6">
-              At the end of the 90s, we ripped albums that we found in physical
-              stores and <i> took them to the internet.</i> It was during this
-              era that we built a content channel with a noble purpose, that of
-              listening. Soulseek's directories were cities and “emigrate to a
-              new land” was a common feeling. Back then, connecting to the
-              Internet required a desktop computer, a good local provider,
-              modem, and time. <br /> <br /> Life was concretely and
-              cybernetically constituted,a division that no longer exists and
-              -without automatic playlists or advertising- finding material was
-              the product of research so the user was, at the very least,
-              selective. With free internet on the streets and the advent of the
-              smartphone, the latest generations are now easy recipients of
-              unrequested information. All this, before touching a wire or
-              having a thoughtful moment. <br />
-              <br />
-              Curated by
-              <Link
-                href="https://www.hi-malta.com"
-                rel="noopener"
-                target="_blank"
-              >
-                <Typography variant="body2" color="primary" display="inline">
-                  {" "}
-                  romo
-                </Typography>
-              </Link>
-              , door is a music selection for listening and dancing in small,
-              safe spaces.
+              <i>*as dry leaves that before the wild hurricane fly, when they meet with an obstacle, mount to the sky</i>
+              <br /><img
+                src="/logo.jpeg"
+                style={{ cursor: "normal", padding: "3px" }}
+                width="300px"
+                height="auto"
+                alt="door.link logo"
+              /><br />
+              lune en béton, online radio program
+              
               <Typography
                 onClick={handleInfo}
                 style={{
@@ -169,33 +150,24 @@ export default function Header({ darkTheme, dark, selectedTrack }) {
                   whiteSpace: "nowrap",
                 }}
                 color="primary"
-                variant="body2"
+                // variant="body2"
                 display="inline"
               >
-                [ less ]
+                close
               </Typography>
             </Typography>
           </Box>
         )}
         <Box className={classes.boxLast}>
-          <Typography
+          {/* <Typography
             variant="body2"
             style={{ marginRight: "10px", cursor: "pointer" }}
             color="primary"
             onClick={() => setShowForm(true)}
           >
             Subscribe
-          </Typography>
-          <Link href="/rss.xml" rel="noopener" target="_blank">
-            <Typography
-              variant="body2"
-              style={{ marginRight: "10px" }}
-              color="primary"
-            >
-              RSS
-            </Typography>
-          </Link>
-          <Link
+          </Typography> */}
+          {/* <Link
             href="https://github.com/Javier-Szyfer/door.link"
             rel="noopener"
             target="_blank"
@@ -207,9 +179,9 @@ export default function Header({ darkTheme, dark, selectedTrack }) {
             >
               Github
             </Typography>
-          </Link>
+          </Link> */}
 
-          <Link href="mailto:contact@door.link">
+          {/* <Link href="mailto:clemhepburn@gmail.com">
             <Typography
               variant="body2"
               style={{ marginRight: "10px" }}
@@ -225,7 +197,7 @@ export default function Header({ darkTheme, dark, selectedTrack }) {
             onClick={() => setSupport(true)}
           >
             Support
-          </Typography>
+          </Typography> */}
         </Box>
       </Box>
       {showForm && <Subscribers setShowForm={setShowForm} dark={dark} />}

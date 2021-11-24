@@ -1,6 +1,6 @@
 export const getPlaylist = async () => {
   const { API_URL } = process.env;
-  const playlist = await fetch(`${API_URL}/playlists?_sort=created_at:desc`, {
+  const playlist = await fetch(`${API_URL}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

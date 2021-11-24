@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
         `,
             }}
           />
-          <link rel="shortcut icon" href="/favicon.svg" />
+          <link rel="shortcut icon" href="/favicon.svg" /> 
           <link
             rel="apple-touch-icon"
             href="/images/apple-touch-icon-180x180.png"
@@ -36,20 +36,7 @@ export default class MyDocument extends Document {
             content="summary_large_image"
             key="twcard"
           />
-          <meta
-            property="og:image"
-            content="https://res.cloudinary.com/aldi/image/upload/v1607370937/ogcard_bmltnc.jpg"
-            key="ogimage"
-          />
-          <meta
-            property="og:image:alt"
-            content="this is the logo of door.link, used as an open graph"
-          />
-          <link
-            rel="alternate" type="application/rss+xml"
-            title="Subscribe to the RSS feed."
-            href="https://door.link/rss.xml"
-          />
+          <title>lune en beton</title>
 
           {/* <meta name="theme-color" content={theme.palette.primary.main} /> */}
         </Head>

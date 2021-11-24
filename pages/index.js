@@ -9,6 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Playlist from "../components/playlist";
 import Player from "../components/player";
 import Header from "../components/header";
+import Footer from '../components/footer';
 
 //Playlist object
 import { getPlaylist } from "./api/playlist";
@@ -38,12 +39,12 @@ export default function Home({ playlists, darkTheme, dark }) {
   const tracks = playlists.map((track) => {
     return {
       id: track.id,
-      title: track.Title,
-      url: track.audio.url,
+      title: track.title,
+      url: track.url,
       duration: track.duration,
       number: track.number,
-      description: track.Description,
-      image: track.artwork.url,
+      description: track.description,
+      image: track.artwork,
     };
   });
   const [selectedTrack, setSelectedTrack] = useState(null);
@@ -79,6 +80,13 @@ export default function Home({ playlists, darkTheme, dark }) {
             setSelectedTrack={setSelectedTrack}
           />
         ))}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
       </Container>
     </Paper>
   );

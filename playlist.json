@@ -1,0 +1,30 @@
+{
+  "tracks" : [
+    {
+      "id": "1",
+      "title": "november 2021",
+      "url": "https://storage.googleapis.com/clemsongs/november24.mp3",
+      "duration": "00:35:41",
+      "number": "01",
+      "description": "Félicia Atkinson, Lisa Lerkenfeldt, Susan Howe & David Grubbs, Emacs, Benoit B",
+      "artwork": "https://i1.sndcdn.com/artworks-000644569177-5sv4ap-t500x500.jpg"
+    }
+  ],
+  "subscribers": [
+    {
+      "id": "subscriber-id",
+      "name": "subscriber-name",
+      "image": "subscriber-image-url"
+    },
+    {
+      "id": "subscriber-id",
+      "name": "subscriber-name",
+      "image": "subscriber-image-url"
+    },
+    {
+      "id": "subscriber-id",
+      "name": "subscriber-name",
+      "image": "subscriber-image-url"
+    }
+  ]
+}

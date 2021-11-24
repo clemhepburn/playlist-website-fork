@@ -77,8 +77,8 @@ export default function Subscribers({ setShowForm, dark }) {
     }
     setLoading(true);
     try {
-      const { API_URL } = process.env;
-      const res = await fetch(`${API_URL}/subscribers`, {
+      const { SUBSCRIBER_URL } = process.env;
+      const res = await fetch(`${SUBSCRIBER_URL}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
