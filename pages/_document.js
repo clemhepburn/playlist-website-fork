@@ -7,12 +7,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-7E2SWW6YEG"
-          />
+        
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179820702-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
 
-          <script
+            gtag('config', 'UA-179820702-1');
+          </script>
+          <script    
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
